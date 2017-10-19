@@ -44,13 +44,19 @@ function [Q,h,err] = manningseq(V,S,n,d,z,plt)
 %     z =[20 10 5  3  4  8  10 20];
 %     [Q,h,err] = manningseq(5,0.01,0.03,d(:),z(:));
 %
+% Reference
+%
+%     Rosenwinkel, S., Landgraf, A., Korup, O., Schwanghart, W., Volkmer,
+%     F., Dzhumabaeva, A., Merchel, S., Rugel, G., Preusser, F. (2017).
+%     Late Pleistocene outburst floods from Issyk Kul, Kyrgyzstan? Earth
+%     Surface Processes and Landforms, 42, 1535–1548. [DOI: 10.1002/esp.4109]
 %
 % See also: fminsearchbnd 
 % 
 % Author: Wolfgang Schwanghart (w.schwanghart[at]geo.uni-potsdam.de)
 % Date: 18. December, 2015
  
-if nargin == 5;
+if nargin == 5
     plt = true;
 end
  
